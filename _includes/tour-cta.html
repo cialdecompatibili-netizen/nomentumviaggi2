@@ -1,0 +1,32 @@
+{%- comment -%} Blocco finale delle schede tour, IT/EN (lingua = page.lang). Link per ref con url-ref, mai slug a mano. {%- endcomment -%}
+{%- assign cta_l = page.lang | default: "it" -%}
+{%- capture cta_c -%}{% include url-ref.html ref="contatti" %}{%- endcapture -%}
+{%- assign cta_cref = "cat-" | append: page.cat -%}
+{%- capture cta_cat -%}{% include url-ref.html ref=cta_cref %}{%- endcapture -%}
+{% if cta_l == "en" %}
+{%- capture wa_txt -%}Hello, I would like {% if page.euro %}to pre-register for{% else %}a quote for{% endif %}: {{ page.title }}{%- endcapture -%}
+<div class="nv-box">
+  <h2 class="nv-h">{% if page.euro %}How to pre-register{% else %}How to ask for a quote{% endif %}</h2>
+  <ol>
+    <li>Write to us on WhatsApp or through the form: we tell you whether there is already a date or we open one.</li>
+    <li>{% if page.euro %}You pay nothing now: the group sets off when it reaches the minimum number.{% else %}We send you a free quote with no obligation.{% endif %}</li>
+    <li>At least 7 days before, we confirm the date, the times and the pick-up points.</li>
+  </ol>
+  <p class="nv-act">{% if site.whatsapp != "" or site.whatsapp_demo %}<a class="nv-btn nv-btn-k" href="{% if site.whatsapp != '' %}https://wa.me/{{ site.whatsapp }}?text={{ wa_txt | url_encode }}{% else %}#{% endif %}"{% if site.whatsapp == '' %} onclick="return false;"{% endif %} target="_blank" rel="noopener">Write to us on WhatsApp</a>{% endif %}<a class="nv-btn nv-btn-o" href="{{ cta_c }}">Contact form</a></p>
+</div>
+<p class="nv-nota">Dates, times and prices are indicative and confirmed when the minimum number of participants is reached. If the tour does not go ahead, you pay nothing.</p>
+<p class="nv-nota">Coming from far away? You can sleep in Mentana, 25 km from Rome, and set off with us: <a href="https://cialdecompatibili-netizen.github.io/villanomentum/" target="_blank" rel="noopener">Villa Nomentum</a>. <a href="{{ cta_cat }}">More tours: {{ page.cat_nome }}</a>.</p>
+{% else %}
+{%- capture wa_txt -%}Buongiorno, vorrei {% if page.euro %}pre-iscrivermi a{% else %}un preventivo per{% endif %}: {{ page.title }}{%- endcapture -%}
+<div class="nv-box">
+  <h2 class="nv-h">{% if page.euro %}Come pre-iscriverti{% else %}Come chiedere il preventivo{% endif %}</h2>
+  <ol>
+    <li>Scrivici su WhatsApp o dal modulo: ti diciamo se c'è già una data o la apriamo.</li>
+    <li>{% if page.euro %}Non paghi nulla ora: il gruppo parte quando raggiunge il numero minimo.{% else %}Ti mandiamo un preventivo gratuito e senza impegno.{% endif %}</li>
+    <li>Almeno 7 giorni prima ti confermiamo data, orari e punti di salita.</li>
+  </ol>
+  <p class="nv-act">{% if site.whatsapp != "" or site.whatsapp_demo %}<a class="nv-btn nv-btn-k" href="{% if site.whatsapp != '' %}https://wa.me/{{ site.whatsapp }}?text={{ wa_txt | url_encode }}{% else %}#{% endif %}"{% if site.whatsapp == '' %} onclick="return false;"{% endif %} target="_blank" rel="noopener">Scrivici su WhatsApp</a>{% endif %}<a class="nv-btn nv-btn-o" href="{{ cta_c }}">Modulo contatti</a></p>
+</div>
+<p class="nv-nota">Date, orari e prezzi sono indicativi e vengono confermati al raggiungimento del numero minimo di iscritti. Se il tour non parte, non paghi nulla.</p>
+<p class="nv-nota">Arrivi da fuori? Puoi dormire a Mentana, a 25 km da Roma, e partire con noi: <a href="https://cialdecompatibili-netizen.github.io/villanomentum/" target="_blank" rel="noopener">Villa Nomentum</a>. <a href="{{ cta_cat }}">Altri tour: {{ page.cat_nome }}</a>.</p>
+{% endif %}

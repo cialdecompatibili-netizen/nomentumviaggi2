@@ -2,12 +2,12 @@
   "_nota": "Catalogo dello shop (serve solo con ecommerce: true in _config.yml). Prezzi in CENTESIMI. Ogni prodotto/categoria ha anche una pagina in _negozio/ (layout negozio-prodotto con pid=<id>, negozio-categoria con cid=<id>). L'id categoria e' riservato. tipo: digitale (niente spedizione) o fisico. visibile:false nasconde senza cancellare. TRADUZIONI: ogni categoria/prodotto puo' avere \"tr\": {\"en\": {\"nome\": \"...\", \"descrizione\": \"...\", \"descrizione_completa\": \"...\"}}; campo mancante = si usa l'italiano.",
   "categorie": [
     {
-      "nome": "Esempio",
-      "id": "esempio",
-      "icona": "🛍️",
+      "nome": "Guide digitali",
+      "id": "guide-digitali",
+      "icona": "🗺️",
       "tr": {
         "en": {
-          "nome": "Example"
+          "nome": "Digital guides"
         }
       }
     }
@@ -15,20 +15,96 @@
   "prodotti": [
     {
       "tipo": "digitale",
-      "id": "prodotto-esempio",
-      "nome": "Prodotto di esempio",
-      "categoria": "esempio",
-      "prezzo_centesimi": 1000,
-      "descrizione": "Descrizione breve del prodotto di esempio.",
-      "descrizione_completa": "Descrizione completa del prodotto.\nOgni riga diventa un paragrafo.",
+      "id": "borghi-lazio-guida-10",
+      "nome": "10 borghi del Lazio da vedere in un giorno",
+      "categoria": "guide-digitali",
+      "prezzo_centesimi": 1400,
+      "descrizione": "Una selezione di borghi vicini a Roma, con consigli pratici.",
+      "descrizione_completa": "Una guida digitale con 10 borghi del Lazio facili da raggiungere da Roma.\n\nPer ogni borgo: cosa vedere, quanto ci vuole e quando andare.\n\nPensata per gite di un giorno.",
       "immagine": "",
-      "icona": "🛍️",
-      "visibile": true,
+      "icona": "🗺️",
+      "visibile": false,
       "tr": {
         "en": {
-          "nome": "Example product",
-          "descrizione": "Short description of the example product.",
-          "descrizione_completa": "Full description of the product.\nEach line becomes a paragraph."
+          "nome": "10 villages in Lazio to see in a day",
+          "descrizione": "A selection of villages near Rome, with practical tips.",
+          "descrizione_completa": "A digital guide to 10 villages in Lazio that are easy to reach from Rome. For each village: what to see, how long it takes and when to go. Designed for day trips."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "neve-guida-inverno-lazio",
+      "nome": "Guida: dove andare sulla neve nel Lazio",
+      "categoria": "guide-digitali",
+      "prezzo_centesimi": 900,
+      "descrizione": "Livata, Terminillo, Campo Staffi, Campo Catino: distanze e consigli.",
+      "descrizione_completa": "Una guida digitale con le principali località sulla neve vicino a Roma.\n\nPer ognuna: distanza, a chi è adatta, cosa portare e quando andare.\n\nI prezzi degli skipass cambiano ogni stagione: controlla sempre i siti ufficiali.",
+      "immagine": "",
+      "icona": "🗺️",
+      "visibile": false,
+      "tr": {
+        "en": {
+          "nome": "Guide: where to go for snow in Lazio",
+          "descrizione": "Livata, Terminillo, Campo Staffi, Campo Catino: distances and tips.",
+          "descrizione_completa": "A digital guide to the main snow destinations near Rome. For each: distance, who it suits, what to bring and when to go. Ski pass prices change every season: always check the official websites."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "roma-1-giorno-itinerario",
+      "nome": "Roma in 1 giorno: itinerario",
+      "categoria": "guide-digitali",
+      "prezzo_centesimi": 900,
+      "descrizione": "Le tappe da non perdere in una giornata, con i tempi a piedi.",
+      "descrizione_completa": "Un itinerario digitale per vedere il meglio di Roma in un giorno solo.\n\nInclude mappa, orari consigliati e come evitare le code più lunghe.\n\nI biglietti dei monumenti si acquistano a parte.",
+      "immagine": "",
+      "icona": "🗺️",
+      "visibile": false,
+      "tr": {
+        "en": {
+          "nome": "Rome in 1 day: itinerary",
+          "descrizione": "The stops not to miss in a day, with walking times.",
+          "descrizione_completa": "A digital itinerary to see the best of Rome in a single day. Includes a map, recommended times and how to avoid the longest queues. Tickets for the monuments are bought separately."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "roma-3-giorni-guida",
+      "nome": "Roma in 3 giorni: guida e mappe",
+      "categoria": "guide-digitali",
+      "prezzo_centesimi": 1900,
+      "descrizione": "Musei, quartieri e gite fuori città per un soggiorno di tre giorni.",
+      "descrizione_completa": "La guida più completa per un soggiorno di tre giorni a Roma.\n\nPer ogni giorno un percorso, con pause e alternative in caso di pioggia.\n\nSuggerisce anche una gita fuori città da fare in giornata.",
+      "immagine": "",
+      "icona": "🗺️",
+      "visibile": false,
+      "tr": {
+        "en": {
+          "nome": "Rome in 3 days: guide and maps",
+          "descrizione": "Museums, neighbourhoods and day trips for a three-day stay.",
+          "descrizione_completa": "The most complete guide for a three-day stay in Rome. A route for each day, with breaks and alternatives in case of rain. It also suggests a day trip outside the city."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "sabaudia-circeo-guida",
+      "nome": "Sabaudia e Circeo: guida per una gita",
+      "categoria": "guide-digitali",
+      "prezzo_centesimi": 1200,
+      "descrizione": "Dune, spiagge e parco nazionale, a un'ora e mezza da Roma.",
+      "descrizione_completa": "Una guida digitale per una gita al mare di Sabaudia e al Parco del Circeo.\n\nCosa vedere, dove parcheggiare e come muoversi.\n\nUtile in ogni stagione, non solo d'estate.",
+      "immagine": "",
+      "icona": "🗺️",
+      "visibile": false,
+      "tr": {
+        "en": {
+          "nome": "Sabaudia and Circeo: guide for a day trip",
+          "descrizione": "Dunes, beaches and national park, an hour and a half from Rome.",
+          "descrizione_completa": "A digital guide for a seaside trip to Sabaudia and the Circeo National Park. What to see, where to park and how to get around. Useful in every season, not only in summer."
         }
       }
     }

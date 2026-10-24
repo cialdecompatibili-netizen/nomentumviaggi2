@@ -1,1 +1,53 @@
 # English dropdown menus (empty = none). Each key must be IDENTICAL to a title in navigation.yml of this folder.
+
+Tours:
+  - title: "All tours"
+    url: /en/tours/
+  - divider: true
+  - title: "Guided day trips"
+    url: /en/tours/guided-day-trips/
+  - title: "Weekends and guided trips"
+    url: /en/tours/weekends-and-guided-trips/
+  - title: "Snow and winter"
+    url: /en/tours/snow-and-winter/
+  - title: "Christmas, markets and festivities"
+    url: /en/tours/christmas-markets-and-festivities/
+  - title: "Wine and flavours of Lazio"
+    url: /en/tours/wine-and-flavours-of-lazio/
+  - title: "Food tours and cooking classes"
+    url: /en/tours/food-tours-and-cooking-classes/
+  - title: "Sea, boats and islands"
+    url: /en/tours/sea-boats-and-islands/
+  - title: "Rome by night"
+    url: /en/tours/rome-by-night/
+  - title: "Rome: guided walking tours"
+    url: /en/tours/rome-guided-walking-tours/
+  - title: "Cycling, nature and trekking"
+    url: /en/tours/cycling-nature-and-trekking/
+  - title: "Families and children"
+    url: /en/tours/families-and-children/
+  - title: "Spa and wellness"
+    url: /en/tours/spa-and-wellness/
+  - title: "Outlets and shopping"
+    url: /en/tours/outlets-and-shopping/
+  - title: "Digital guides and itineraries"
+    url: /en/tours/digital-guides-and-itineraries/
+
+Tailor-made:
+  - title: "Quote for groups"
+    url: /en/groups-and-companies/
+  - divider: true
+  - title: "Private tours"
+    url: /en/tours/private-tours/
+  - title: "From Civitavecchia for cruise passengers"
+    url: /en/tours/from-civitavecchia-for-cruise-passengers/
+  - title: "Groups, schools and companies"
+    url: /en/tours/groups-schools-and-companies/
+  - title: "Pilgrimages and religious tourism"
+    url: /en/tours/pilgrimages-and-religious-tourism/
+  - title: "Trips for seniors"
+    url: /en/tours/trips-for-seniors/
+  - title: "Events, concerts and parties"
+    url: /en/tours/events-concerts-and-parties/
+  - title: "Transfers and coach hire"
+    url: /en/tours/transfers-and-coach-hire/
